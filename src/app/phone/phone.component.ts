@@ -5,8 +5,9 @@ import { Component, OnInit } from '@angular/core';
     template: '<h1>{{ message }}</h1>'
 })
 export class PhoneComponent implements OnInit {
-    message = 'Hello, world ! =)';
+    message = '';
     
     ngOnInit() {
+      this.message = 'Hello, world ! =)';
     }
 }

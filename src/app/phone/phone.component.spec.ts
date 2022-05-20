@@ -19,6 +19,12 @@ describe('PhoneComponent', () => {
     fixture.detectChanges();
   });
 
+  it('should be', async () => {
+    fixture.whenStable().then(() => {
+      expect(component.message).toBe('Hello, world ! =)');
+    });
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
