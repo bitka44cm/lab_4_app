@@ -8,6 +8,6 @@ export class PhoneComponent implements OnInit {
     message = '';
     
     ngOnInit() {
-      this.message = 'Hello, world ! =)';
+      this.message = 'Hello, world !!!!!!!!!!!! =)';
     }
 }
