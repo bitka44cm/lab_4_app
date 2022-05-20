@@ -1,0 +1,25 @@
+name: test-1
+
+on:  
+  pull_request:
+  workflow_dispatch:
+
+jobs:  
+  testing:
+
+    runs-on: ubuntu-latest  
+
+    steps:  
+    - uses: actions/checkout@v2
+    
+    - name: Set up Node.js version
+      uses: actions/setup-node@v1  
+      with:  
+        node-version: 16.x
+        
+    - name: npm install, test and build
+      run: |
+        npm install -g @angular/cli 
+        npm install  
+        ng test
+        ng build
